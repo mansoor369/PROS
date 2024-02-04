@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./guideway.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="guideway.js"></script>
+    <link href="img/favicon.ico" rel="icon">
+    
+    <style>
+        body {
+            font-family:'Bubblegum Sans', cursive; 
+            background-color: #e0f9ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Styling for the navigation bar */
+        /* .navbar {
+            background-color: #17a2b8;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        } */
+
+        /* Styling for the main content container */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: rgb(193, 227, 238);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for the left side (booking form) */
+        .left-side {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .booking-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            align-self: flex-start;
+        }
+
+        /* Styling for the right side (photo) */
+        .right-side {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .right-side .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mySlides img {
+    
+    width: 500px; /* Ensure the image width does not exceed the container width */
+    height: 800px; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+    margin-top: 90px;
+    border-color: black ;
+    margin-left: 30px;
+    border-radius: 160px;
+}  
+
+.right-side .mySlides {
+    display: none;
+    animation: fade 5s ease infinite; /* Adjust animation duration and other properties as needed */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg 6 sticky-top">
+        <div class="container-fluid cont-1" style="width: 80%;">
+            <div class="navbar-brand" style="text-transform: uppercase;"><a href="./guideway.html"><img
+                src="./Guid way straight logo.png" alt="" class="img-fluid" width="110"></a></div>
+            <div class="offcanvas offcanvas-end bg-info" tabindex="-1" id="navbar-item"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto me-0 ">
+                        <li class="nav-item"><a href="./guideway.html" class="nav-link">Home</a></li>
+                        <li class="nav-item ">
+                            <a  href="./aboutUs.html"  class="nav-link">About
+                                Us</a>
+                        </li>
+                        <li class=" nav-item dropdown">
+                            <a class=" nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                href="">Services</a>
+                            <ul class="dropdown-menu  border-0  ">
+                                <li><a class="dropdown-item" href="./Digitalskills.html">Digital Skills</a></li>
+                                <li><a class="dropdown-item" href="./specials.html">Dedicated training for disabled</a></li>
+                                <li><a class="dropdown-item" href="./School.html">School tutors</a></li>
+                                <li><a class="dropdown-item" href="./STEAM.html">Steam</a></li>
+                                <!-- <li><a class="dropdown-item" href="">Graphic Designing</a></li>
+                                <li><a class="dropdown-item" href="">UI / UX Designing</a></li>
+                                <li><a class="dropdown-item" href="">Content Writing</a></li> -->
+                            </ul>
+                        </li>
+                        
+                        <!-- <li class="nav-item"><a href="" class="nav-link">Resources</a></li> -->
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="./ContactUs.html" class="nav-link">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="schedule--time">
+                    <span><a href=""><img width="180" class="img-fluid img"
+                                src="https://www.digitalumbrellas.com/wp-content/uploads/2019/12/24-new.png"
+                                alt=""></a></span>
+                </div> -->
+            <button href="#navbar-item" class="navbar-toggler btn-outline-light" style="margin-left: auto;"
+                type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container" style="margin-top: 150px; border-radius: 30px; background-image: url(./img/check.png);">
+        <!-- Left Side (Booking Form) -->
+        <div class="left-side">
+            <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 70px ;">Book One On One</h1>
+            <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 50px;">Program Classes</h1>
+            <form style="margin-top: 50px;" class="booking-form" action="#" method="post">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+    
+                <label for="fatherName">Father Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+    
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" name="grade" required>
+    
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+    
+                <label for="timings">Timings:</label>
+                <select id="timings" name="timings" required>
+                    <option value="9am-11am">9am to 11am</option>
+                    <option value="12pm-2pm">12pm to 2pm</option>
+                    <option value="4pm-6pm">4pm to 6pm</option>
+                </select>
+    
+                <label for="duration">Duration:</label>
+                <select id="duration" name="duration" required>
+                    <option value="1 month">1 month</option>
+                    <option value="2 months">2 months</option>
+                    <option value="3 months">3 months</option>
+                </select>
+
+                    
+            <label for="programType">Program Type:</label>
+            <select id="programType" name="programType" required>
+                <option value="Digital Classes">Digital Classes</option>
+                <option value="Dedicated training for Specials">Dedicated training for Specials</option>
+                <option value="School Training">School Training</option>
+                <option value="STEAM Program">STEAM Program</option>
+            </select>
+
+            <!-- Conditional fields for "Dedicated Service for Specials" -->
+            <div id="specialsFields" style="display: none;">
+                <label for="disabilityType">Disability Type:</label>
+                <input type="text" id="disabilityType" name="disabilityType">
+                <br>
+                <label>Disability Intensity:</label> <br>
+                <label><input type="radio" name="intensity" value="Low"> Low</label> <br>
+                <label><input type="radio" name="intensity" value="Medium"> Medium</label> <br>
+                <label><input type="radio" name="intensity" value="Extreme"> Extreme</label> <br>
+            </div>
+
+                <label for="level"> IQLevel:</label>
+                <select id="level" name="level" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+    
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+
+    <!-- Right Side (Photo Slideshow) -->
+    <div class="right-side">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./pexels-artem-podrez-6941996.jpg" alt="Photo 1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./pexels-artem-podrez-6941996.jpg" alt="Photo 2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./pexels-artem-podrez-6941996.jpg" alt="Photo 3">
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+            let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 5 seconds (adjust as needed)
+        }
+
+
+
+
+        // JavaScript to show/hide the conditional fields
+        const programTypeSelect = document.getElementById("programType");
+        const specialsFields = document.getElementById("specialsFields");
+    
+        programTypeSelect.addEventListener("change", function () {
+            if (programTypeSelect.value === "Dedicated training for Specials") {
+                specialsFields.style.display = "block";
+            } else {
+                specialsFields.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
