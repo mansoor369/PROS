@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Guideway",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../elearning/elearning-1.0.0/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Guideway"
+	}
+}

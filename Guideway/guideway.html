@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideWay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./guideway.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="guideway.js"></script>
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg 6 sticky-top">
+        <div class="container-fluid cont-1" style="width: 80%;">
+            <div class="navbar-brand" style="text-transform: uppercase;"><a href=""><img
+                        src="./Guid way straight logo.png" alt="" class="img-fluid" width="110"></a></div>
+            <div class="offcanvas offcanvas-end bg-info" tabindex="-1" id="navbar-item"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto me-0 ">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item ">
+                            <a href="./aboutUs.html" class="nav-link">About
+                                Us</a>
+                        </li>
+                        <li class=" nav-item dropdown">
+                            <a class=" nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                href="">Services</a>
+                            <ul class="dropdown-menu  border-0  ">
+                                <li><a class="dropdown-item" href="./Digitalskills.html">Digital Skills</a></li>
+                                <li><a class="dropdown-item" href="./specials.html">Dedicated training for disabled</a></li>
+                                <li><a class="dropdown-item" href="./School.html">School tutors</a></li>
+                                <li><a class="dropdown-item" href="./STEAM.html">Steam</a></li>
+                                <!-- <li><a class="dropdown-item" href="">Graphic Designing</a></li>
+                                <li><a class="dropdown-item" href="">UI / UX Designing</a></li>
+                                <li><a class="dropdown-item" href="">Content Writing</a></li> -->
+                            </ul>
+                        </li>
+
+                        <!-- <li class="nav-item"><a href="" class="nav-link">Resources</a></li> -->
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="./ContactUs.html" class="nav-link">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="schedule--time">
+                    <span><a href=""><img width="180" class="img-fluid img"
+                                src="https://www.digitalumbrellas.com/wp-content/uploads/2019/12/24-new.png"
+                                alt=""></a></span>
+                </div> -->
+            <button href="#navbar-item" class="navbar-toggler btn-outline-light" style="margin-left: auto;"
+                type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid text-center cont--">
+        <div class="container"   >
+            <div class="row">
+                <div class="col-lg-6">
+                    <img style="border-radius: 50%; border: 2px solid rgb(89, 118, 212); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);"  src="./front.jpeg" class="img-fluid mt-3 mb-3" width="600" alt="">
+                </div>
+
+                <div class="col-lg-6" style="margin-top:14%;">
+                    <h3 class="text-primary fw-bold fs-2 mb-3">1-to-1</h3>
+                    <h1 style="font-size:50px; font-weight:bold !important;" class="">Online
+                        <small>/</small> Home Trainers
+                    </h1>
+                    <h5 class="text-primary fw-bold">At Your Doorstep</h6>
+                        <a href="./aboutUs.html"><button class="btn btn-primary  mt-lg-4   px-lg-5 py-2 text-center btn_">Get
+                            Started</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- CAROUSEL CODE -->
+
+    <!-- <div class="container-fluid p-0 m-0 cont-2">
+        <div class="row">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+
+                <div class="carousel-inner opacity-75">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/img/carousel-2.jpg" class=" w-100 h-100 p-0 m-0" alt="...">
+                        <div class="col-lg-8">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                                <div class="container text-container">
+                                    <div class="row text-center">
+                                            <h5 class="text-primary text-uppercase  animated slideInDown">Best Online Courses</h5>
+                                            <h1 class=" text-white animated slideInDown">Learn from Industry Experts</h1>
+                                            <p class=" text-white paragraph">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                                            <div class="buttons">
+                                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                            <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                                          
+                                            </div>
+                                             
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/img/carousel-1.jpg" class="w-100" alt="...">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                            <div class="container text-container">
+                                <div class="row text-center">
+                                        <h5 class="text-primary text-uppercase  animated slideInDown">Best Online Courses</h5>
+                                        <h1 class=" text-white animated slideInDown">Learn from Industry Experts</h1>
+                                        <p class=" text-white paragraph">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                                        <div class="buttons">
+                                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                        <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                                      
+                                        </div>
+                                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- CAROUSEL CODE -->
+
+
+
+    <div class="container cont-3 mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center services">
+                <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                <h5 class="mb-3 fw-bold">Skilled Instructors</h5>
+                <p style="padding: 10px; padding-top: 0;">Our skilled instructors embody excellence, imparting knowledge
+                    with passion, ensuring a brighter future for all learners. Join us today</p>
+            </div>
+            <div class="col-lg-3 col-md-6  text-center services">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5 class="mb-3 fw-bold">Online Classes</h5>
+                <p style="padding: 10px; padding-top: 0;">Unlock learning from anywhere with our dynamic online classes.
+                    Embrace the future of education with convenience and flexibility.</p>
+            </div>
+            <div class="col-lg-3 col-md-6  text-center services">
+                <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                <h5 class="mb-3 fw-bold">Classes on Your Doorstep</h5>
+                <p style="padding: 10px; padding-top: 0;">"Experience the convenience of learning at your doorstep. Our expert instructors bring education right to your home.</p>
+            </div>
+            <div class="col-lg-3 col-md-6  text-center services">
+                <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                <h5 class="mb-3 fw-bold">Special Classes for differently-abled Students</h5>
+                <p style="padding: 10px; padding-top: 0;">Empowering differently-abled students to thrive in a supportive and inclusive learning environment.</p>
+            </div>
+        </div>  
+    </div>
+
+    <!-- WELCOME TO GUIDE WAY -->
+
+
+    <!-- <div class="container cont-4 mt-5">
+        <div class="row ">
+            <div class="col-lg-6">
+                <img class="img-fluid w-100 h-100 imageAbout" src="./img/img/about.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h6 class="section-title  text-primary text-uppercase mx-3">About us</h6>
+                <h1 class="fw-semibold mx-3">Welcome to Guideway</h1>
+                <p class="mt-5 mx-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                    et eos. Clita erat
+                    ipsum et lorem et sit.</p> <br> <br>
+                <p class="mt-4 mx-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                    et eos. Clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <ul class="list">
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list">
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                            <small>
+                                <li class="list-items"> <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+                                    Instructors</li>
+                            </small>
+                        </ul>
+                    </div>
+                </div>
+                <a href="" class="btn  btn-info py-md-2 px-md-3 mx-3  animated slideInLeft">Know More About US<i class="fa fa-arrow-right text-primary mx-3 me-2"></i></a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- WELCOME TO GUIDE WAY -->
+
+
+    <div class="container mt-5" style="width: 81%;">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="opacity-75">Welcome to Guideway</h3>
+                <h2 class="text-primary">Empowering Minds: Unveiling Our Teaching Platform</h2>
+                <p style="line-height: 40px;">we are a dedicated team of educators and experts committed to unlocking
+                    the full potential of every
+                    learner. With a passion for knowledge and a belief in the transformative power of education, we are
+                    here to provide engaging, innovative, and personalized learning experiences. Our mission is to
+                    inspire, inform, and empower individuals of different backgrounds to achieve their educational goals
+                    and
+                    thrive in a rapidly evolving world. Join us on this exciting journey of discovery, growth, and
+                    excellence.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="./image2.jpeg" width="600" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5">
+        <hr>
+        <div class="row text-center mb-2">
+            <h2 class="text-capitalize text-info">How it works</h2>
+
+        </div>
+        <hr>
+        <div class="row mt-4 cont---">
+            <div class="col-lg-3 col">
+                <img class="img-fluid" width="300"
+                    src="https://beacontutorspk.com/wp-content/uploads/2023/02/SubmitYourInquiry.svg" alt="">
+            </div>
+            <div class="col-lg col" style="margin-top:3rem;">
+
+                <h3 class="work-heading">Submit your inquiry</h3>
+                <p style="font-size: 25px; line-height: 35px; width: 83%" class="d-none d-lg-flex d-md-flex">Contact
+                    us
+                    on our
+                    official WhatsApp account and discuss where you need our help. So we can find tutoring
+                    that works for you. You are also welcome if you need a consultation first.</p>
+
+                <div class="row">
+                    <svg style="width: 30%;margin-left:auto;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 217.99 82.59">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #3e6c98;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 5px;
+                                }
+
+                                .cls-2 {
+                                    fill: #3e6c98;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path class="cls-1"
+                                    d="M212.46,23.45A68,68,0,0,1,189,57.79c-4.18,3.2-24.62,18.89-50.55,12.63-1.23-.3-23.73-6-35.16-26.78-2.47-4.49-9-16.4-4.72-28a19.52,19.52,0,0,1,8.26-10.47C108.15,4.38,115,.4,121.62,4a13.64,13.64,0,0,1,7,10.77c.45,5.3-2.56,9.16-3.61,10.55-5.28,6.92-15.54,9.85-23.76,8.85-18.7-2.27-18.88-22.72-40-29.43C44.05-.79,28.7,7.9,27.64,8.52,13.48,16.8,9.28,31.41,8.25,35c-3.89,13.53-.83,25.93,3,34.72"
+                                    style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 406.077, 406.077; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="cls-2"
+                                    d="M206.9,22.27a5.64,5.64,0,1,1,4,6.9A5.64,5.64,0,0,1,206.9,22.27Z">
+                                </path>
+                                <polygon class="cls-2" points="0 67.94 10 66.86 16.16 58.91 18.79 82.59 0 67.94">
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- 2ND -->
+        <div class="row mt-4 cont---">
+            <div class="col-lg col" style="margin-top:3rem; width:30%;">
+                <h3 class="work-heading">Profile Screening</h3>
+                <p style="font-size: 25px; line-height: 35px; width: 83%" class="d-none d-lg-flex d-md-flex">We
+                    never
+                    forward
+                    hundreds of profiles to confuse you. Instead, our staff will filter and arrange the most
+                    relevant
+                    tutor profiles according to your unique requirements and share them with you.</p>
+
+                <div class="row">
+                    <svg style="width: 30%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.99 82.59">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #3e6c98;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 5px;
+                                }
+
+                                .cls-2 {
+                                    fill: #3e6c98;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path class="cls-1"
+                                    d="M212.46,23.45A68,68,0,0,1,189,57.79c-4.18,3.2-24.62,18.89-50.55,12.63-1.23-.3-23.73-6-35.16-26.78-2.47-4.49-9-16.4-4.72-28a19.52,19.52,0,0,1,8.26-10.47C108.15,4.38,115,.4,121.62,4a13.64,13.64,0,0,1,7,10.77c.45,5.3-2.56,9.16-3.61,10.55-5.28,6.92-15.54,9.85-23.76,8.85-18.7-2.27-18.88-22.72-40-29.43C44.05-.79,28.7,7.9,27.64,8.52,13.48,16.8,9.28,31.41,8.25,35c-3.89,13.53-.83,25.93,3,34.72"
+                                    style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 406.077, 406.077; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="cls-2"
+                                    d="M206.9,22.27a5.64,5.64,0,1,1,4,6.9A5.64,5.64,0,0,1,206.9,22.27Z">
+                                </path>
+                                <polygon class="cls-2" points="0 67.94 10 66.86 16.16 58.91 18.79 82.59 0 67.94">
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-3 col">
+                <img class="img-fluid" width="300"
+                    src="https://beacontutorspk.com/wp-content/uploads/2023/02/TeacherLocating.svg" alt="">
+            </div>
+        </div>
+
+        <!-- 3rd -->
+        <div class="row mt-4 cont---">
+            <div class="col-lg-3 col">
+                <img class="img-fluid" width="300"
+                    src="https://beacontutorspk.com/wp-content/uploads/2023/02/ProfileSharing.svg" alt="">
+            </div>
+            <div class="col col" style="margin-top:3rem; width:30%;">
+
+                <h3 class="work-heading">Choose your tutor</h3>
+                <p style="font-size: 25px; line-height: 35px; width: 83%" class="d-none d-lg-flex d-md-flex">CNow
+                    search
+                    from the
+                    shared list of home tutors for subjects, qualifications, experience, gender, and fees. After
+                    deciding on the teachers, you can proceed to the introductory session we offer to our students.
+                </p>
+
+                <div class="row">
+                    <svg style="width: 30%;margin-left:auto;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 217.99 82.59">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #3e6c98;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 5px;
+                                }
+
+                                .cls-2 {
+                                    fill: #3e6c98;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path class="cls-1"
+                                    d="M212.46,23.45A68,68,0,0,1,189,57.79c-4.18,3.2-24.62,18.89-50.55,12.63-1.23-.3-23.73-6-35.16-26.78-2.47-4.49-9-16.4-4.72-28a19.52,19.52,0,0,1,8.26-10.47C108.15,4.38,115,.4,121.62,4a13.64,13.64,0,0,1,7,10.77c.45,5.3-2.56,9.16-3.61,10.55-5.28,6.92-15.54,9.85-23.76,8.85-18.7-2.27-18.88-22.72-40-29.43C44.05-.79,28.7,7.9,27.64,8.52,13.48,16.8,9.28,31.41,8.25,35c-3.89,13.53-.83,25.93,3,34.72"
+                                    style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 406.077, 406.077; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="cls-2"
+                                    d="M206.9,22.27a5.64,5.64,0,1,1,4,6.9A5.64,5.64,0,0,1,206.9,22.27Z">
+                                </path>
+                                <polygon class="cls-2" points="0 67.94 10 66.86 16.16 58.91 18.79 82.59 0 67.94">
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th -->
+        <div class="row mt-4 cont---">
+            <div class="col-lg col" style="margin-top:3rem; width:30%;">
+                <h3 class="work-heading">Free demo tutoring session</h3>
+                <p style="font-size: 25px; line-height: 35px; width: 83%" class="d-none d-lg-flex d-md-flex">
+                    Students
+                    learning
+                    compatibility with the teaching style should never be an afterthought. So you can have a 2-days
+                    free
+                    trial class with your chosen teacher and then decide if you want to continue.</p>
+
+                <div class="row">
+                    <svg style="width: 30%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.99 82.59">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #3e6c98;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 5px;
+                                }
+
+                                .cls-2 {
+                                    fill: #3e6c98;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path class="cls-1"
+                                    d="M212.46,23.45A68,68,0,0,1,189,57.79c-4.18,3.2-24.62,18.89-50.55,12.63-1.23-.3-23.73-6-35.16-26.78-2.47-4.49-9-16.4-4.72-28a19.52,19.52,0,0,1,8.26-10.47C108.15,4.38,115,.4,121.62,4a13.64,13.64,0,0,1,7,10.77c.45,5.3-2.56,9.16-3.61,10.55-5.28,6.92-15.54,9.85-23.76,8.85-18.7-2.27-18.88-22.72-40-29.43C44.05-.79,28.7,7.9,27.64,8.52,13.48,16.8,9.28,31.41,8.25,35c-3.89,13.53-.83,25.93,3,34.72"
+                                    style="transition: stroke-dashoffset 1s ease-in-out 0s; stroke-dasharray: 406.077, 406.077; stroke-dashoffset: 0;">
+                                </path>
+                                <path class="cls-2"
+                                    d="M206.9,22.27a5.64,5.64,0,1,1,4,6.9A5.64,5.64,0,0,1,206.9,22.27Z">
+                                </path>
+                                <polygon class="cls-2" points="0 67.94 10 66.86 16.16 58.91 18.79 82.59 0 67.94">
+                                </polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-3 col">
+                <img class="img-fluid" width="300"
+                    src="https://beacontutorspk.com/wp-content/uploads/2023/02/DemoConduction.svg" alt="">
+            </div>
+        </div>
+        <!-- 5th -->
+        <div class="row mt-4 cont---">
+            <div class="col-lg-3 col">
+                <img class="img-fluid" width="300"
+                    src="https://beacontutorspk.com/wp-content/uploads/2023/02/SuccessfulDeal.svg" alt="">
+            </div>
+            <div class="col col" style="margin-top:3rem; width:30%;">
+
+                <h3 class="work-heading">
+                    Get on board to start​ learning</h3>
+                <p style="font-size: 25px; line-height: 35px;width: 83%;" class="d-none d-lg-flex d-md-flex">
+                    Satisfied
+                    with the
+                    trial and want to start regular home tuition sessions with the same teacher? You can pay to get
+                    started. If not, you can choose another tutor for a drop-in teaching service.</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./Why Choose Us_.png"
+                    class="img-fluid w-150 h-100" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="unique1 w-100 h-100">
+                    <h2> Why Choose Us ?</h2>
+                    <p class="fs-6">What sets us apart is our unwavering commitment to tailored learning experiences. We
+                        understand
+                        that each learner is unique, with distinct needs and aspirations. That's why we offer flexible
+                        learning pathways, and personalized support to ensure that every
+                        student can excel at their own pace. Our team of passionate educators leverages cutting-edge
+                        technology and pedagogical approaches to make learning engaging, interactive, and effective. We
+                        foster a sense of community and collaboration among our learners, creating a supportive
+                        environment where knowledge flourishes. Join us, and experience the extraordinary, as we
+                        redefine education with innovation, individuality, and inclusivity.</p>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Daily Progress
+                        Report</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Free demo
+                        class</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Choose a tutor from
+                        options of expert tutors</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Customize Learning by
+                        Home Tutor</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Both – Home and Online
+                        Convenience</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Special tutors for Slow
+                        Learners</span><br>
+                    <i aria-hidden="true" class="fas fa-check-circle"></i> <span class="unique">Home and Online Tuition
+                        with Smart Monitoring of Tutor and Student</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+        <!-- svgs -->
+
+        
+
+        <!-- COURSE Categories -->
+
+        <!-- <div class="container cont-5 mt-5">
+            <div class="row">
+                <h1 class="text-center fw-semibold opacity-75 mb-3 mt-3" style="text-decoration: underline;text-decoration-color: #06BBCC;">Course Categories</h1>
+                <div class="col-lg-6 mt-4" style="position: relative;">
+                       <a href=""><img class="img-fluid w-100" src="./img/img/cat-1.jpg" alt=""></a> 
+                        <div class="WebDesign1 text-center"><a style="text-decoration: none;color: black !important;" href="">Web Design <br><span class="text-primary fw-semibold" style="font-size: small;">49 Courses</span></a> </div>
+
+                        <div class="row mt-3">
+                            <div class="col-lg-6" style="position: relative;">
+                                <a href=""><img class="img-fluid w-100 h-100" src="./img/img/cat-2.jpg" alt=""></a> 
+                                <div class="WebDesign text-center"><a style="text-decoration: none;color: black !important;" href="">Web Design <br><span class="text-primary fw-semibold" style="font-size: small;">49 Courses</span></a> </div>
+                            </div>
+                            <div class="col-lg-6" style="position: relative;">
+                                <a href=""><img class="img-fluid w-100 h-100" src="./img/img/cat-3.jpg" alt=""></a> 
+                                <div class="WebDesign text-center"><a style="text-decoration: none;color: black !important;" href="">Web Design <br><span class="text-primary fw-semibold" style="font-size: small;">49 Courses</span></a> </div>
+                            </div>
+                        </div>  
+                </div>
+                <div class="col-lg-6 mt-4" style="position: relative;">
+                    <a href=""><img class="img-fluid w-100 h-75" src="./img/img/cat-4.jpg" alt=""></a> 
+                    <div class="WebDesign4 text-center"><a style="text-decoration: none;color: black !important;" href="">Web Design <br><span class="text-primary fw-semibold" style="font-size: small;">49 Courses</span></a> </div>
+                </div>
+            </div>
+    </div> -->
+
+
+
+
+
+        <!-- COURSE Categories -->
+
+        <div class="container cont-6">
+            <div class="row">
+                <h1 class="text-center fw-semibold opacity-75 mb-3 mt-5"
+                    style="text-decoration: underline;text-decoration-color: #06BBCC;">Subject and Courses</h1>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/course-1.jpg" class="img-fluid" alt="">
+                            <div class="card-text text-center">
+                                $149.00
+                            </div>
+                            <div class="mb-3 text-center">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <div class="card-text text-center fw-semibold">Web Design & Development Course for Beginners
+                            </div>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end mt-3"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 mt-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/course-1.jpg" class="img-fluid" alt="">
+                            <div class="card-text text-center">
+                                $149.00
+                            </div>
+                            <div class="mb-3 text-center">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <div class="card-text text-center fw-semibold">Web Design & Development Course for Beginners
+                            </div>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end mt-3"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 mt-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/course-1.jpg" class="img-fluid" alt="">
+                            <div class="card-text text-center">
+                                $149.00
+                            </div>
+                            <div class="mb-3 text-center">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(123)</small>
+                            </div>
+                            <div class="card-text text-center fw-semibold">Web Design & Development Course for Beginners
+                            </div>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end mt-3"
+                                style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 mt-3"
+                                style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row text-center mb-2">
+                <h2 class="text-capitalize text-info">Customer Reviews</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="Reviews">
+                            <img src="https://guideway.pk/wp-content/uploads/2021/04/customer-3-1-150x150.jpg"
+                                class="img-fluid" style="border-radius: 50%;" alt=""> <br>
+                            <span class="name text-capitalize">Parent</span> <br>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mt-2">"I highly recommend GuideWay tuition service, it has helped my child excel in
+                            school."</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="Reviews">
+                            <img src="https://guideway.pk/wp-content/uploads/2021/04/customer-3-1-150x150.jpg"
+                                class="img-fluid" style="border-radius: 50%;" alt=""> <br>
+                            <span class="name text-capitalize">Parent</span> <br>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mt-2">"I highly recommend GuideWay tuition service, it has helped my child excel in
+                            school."</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="Reviews">
+                            <img src="https://guideway.pk/wp-content/uploads/2021/04/customer-3-1-150x150.jpg"
+                                class="img-fluid" style="border-radius: 50%;" alt=""> <br>
+                            <span class="name text-capitalize">Parent</span> <br>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mt-2">"I highly recommend GuideWay tuition service, it has helped my child excel in
+                            school."</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="Reviews">
+                            <img src="https://guideway.pk/wp-content/uploads/2021/04/customer-3-1-150x150.jpg"
+                                class="img-fluid" style="border-radius: 50%;" alt=""> <br>
+                            <span class="name text-capitalize">Parent</span> <br>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p class="mt-2">"I highly recommend GuideWay tuition service, it has helped my child excel in
+                            school."</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                
+            </div>
+           
+            
+            
+        </div>
+        
+
+        <!-- Expert Instructors -->
+
+        <!-- <div class="container">
+        <div class="row">
+            <h1 class="text-center fw-semibold opacity-75 mb-3 mt-3"
+                style="text-decoration: underline;text-decoration-color: #06BBCC;">Expert Instructors</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/team-1.jpg" class="img-fluid" alt="">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="card-text text-center fw-semibold mt-3">Instructor Name</div>
+                            <small class="card-text text-center">Designation</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/team-2.jpg" class="img-fluid" alt="">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="card-text text-center fw-semibold mt-3">Instructor Name</div>
+                            <small class="card-text text-center">Designation</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/team-3.jpg" class="img-fluid" alt="">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="card-text text-center fw-semibold mt-3">Instructor Name</div>
+                            <small class="card-text text-center">Designation</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/img/team-4.jpg" class="img-fluid" alt="">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="card-text text-center fw-semibold mt-3">Instructor Name</div>
+                            <small class="card-text text-center">Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </div>
+    <div class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms &amp; Condition</a>
+                    <a class="btn btn-link" href="">FAQs &amp; Help</a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>NIC Peshawar, PTCL Training Centre, Nasir
+                        Bagh Rd, Peshawar 25000</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 304 6667704</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Guideway@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/GuideWay66"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.facebook.com/people/GuideWay/100088685436271/?mibextid=ZbWKwL&_rdc=1&_rdr"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/guideway66/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+            <div class="row g-2 pt-2">
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-1.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-2.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-1.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-2.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-3.jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid bg-light p-1" src="/img/img/course-1.jpg" alt="">
+                </div>
+            </div>
+        </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Feedback</h4>
+                    <p>Your Feedback is Appreciated.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom btn-link" href="#">Guideway</a>, All Right Reserved.
+
+
+
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a class="btn-link" href="">Home</a>
+                            <a class="btn-link" href="">Cookies</a>
+                            <a class="btn-link" href="">Help</a>
+                            <a class="btn-link" href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+
+
+</html>
