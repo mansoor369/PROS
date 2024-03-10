@@ -1,0 +1,330 @@
+  .small {
+    animation: slideIn 0.5s forwards;
+    animation-duration: 1.6s;
+    font-size: 20px !important;
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-150%);
+        /* Start the element 100% below its original position */
+        opacity: 0;
+        /* Start with opacity 0 */
+      }
+
+      to {
+        transform: translateY(0);
+        /* End the element at its original position */
+        opacity: 1;
+        /* End with opacity 1 */
+      }
+    }
+
+  }
+
+  .skills-heading {
+    color: #ffd700;
+    transform-style: preserve-3d;
+    animation: slideIn 1.0s forwards;
+    transform: translateX(-150%);
+    animation-delay: 0.2s;
+    height: max-content;
+    width: 100%;
+    font-size: 80px;
+    margin-left: 5%;
+    transition: all 0.3s ease-out;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 0;
+
+    @keyframes identifier {
+      from {
+        transform: translateX(-150%);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (max-width:500px) {
+    .skills-heading {
+      font-size: 34px;
+    }
+  }
+
+  .skills {
+    margin-top: 5%;
+    font-size: 30px;
+  }
+
+  @media (max-width:500px) {
+    .skills {
+      font-size: 34px;
+    }
+  }
+
+  .para {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    animation: slideInFromBottom 3.5s forwards;
+    animation-duration: 1.6s;
+
+    @keyframes slideInFromBottom {
+      from {
+        transform: translateY(150%);
+        /* Start the element 100% below its original position */
+        opacity: 0;
+        /* Start with opacity 0 */
+      }
+
+      to {
+        transform: translateY(0);
+        /* End the element at its original position */
+        opacity: 1;
+        /* End with opacity 1 */
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInside 3.5s forwards;
+    animation-duration: 1.6s;
+
+    @media (max-width:500px) {
+      .icon {
+        width: 20px !important;
+      }
+    }
+
+    // @media (min-width:500px) {
+    //   .icon{
+    //       width: 40px !important;
+    //   }
+    // }
+
+    @keyframes slideInside {
+      from {
+        transform: translateX(150%);
+        /* Start the element 100% below its original position */
+        opacity: 0;
+        /* Start with opacity 0 */
+      }
+
+      to {
+        transform: translateY(0);
+        /* End the element at its original position */
+        opacity: 1;
+        /* End with opacity 1 */
+      }
+    }
+
+    .icon {
+      font-size: 60px;
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+      /* Apply a blurry effect to the background */
+      // box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Soft shadow effect */
+      text-shadow: 0px 0px 10px #ffd700;
+      /* Text shadow */
+      transition: box-shadow 0.4s ease-out;
+      /* Smooth transition for box shadow */
+    }
+
+    .icon:hover {
+      box-shadow: 0 0 20px #ffd700;
+      /* Increase shadow size on hover */
+    }
+
+    @keyframes keepSliding {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+
+  .skills_ {
+    animation: slideInFromRight 3.5s forwards;
+    animation-duration: 1.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: #ffd700;
+
+    @keyframes slideInFromRight {
+      from {
+        transform: translateY(150%);
+        /* Start the element 100% below its original position */
+        opacity: 0;
+        /* Start with opacity 0 */
+      }
+
+      to {
+        transform: translateY(0);
+        /* End the element at its original position */
+        opacity: 1;
+        /* End with opacity 1 */
+      }
+    }
+
+
+  }
+
+  @media (max-width:400px) {
+    .skills_ {
+      font-size: 20px !important;
+    }
+  }
+
+  .cont {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+  }
+
+  .card {
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .contt {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .skills-heading_ {
+    color: #ffd700;
+    transform-style: preserve-3d;
+    animation: slideIn 1.0s forwards;
+    transform: translateX(-150%);
+    animation-delay: 0.2s;
+    height: max-content;
+    width: 100%;
+    font-size: 80px;
+    transition: all 0.3s ease-out;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 0;
+    margin-left: 5%;
+
+    @keyframes identifier {
+      from {
+        transform: translateX(-150%);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (max-width:400px) {
+    .skills-heading_ {
+      font-size: 34px !important;
+    }
+  }
+
+
+  .small_ {
+    animation: slideIn 0.5s forwards;
+    animation-duration: 1.6s;
+    font-size: 20px !important;
+    color: grey;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: italic;
+    text-shadow: 1px 1px #ffd700;
+
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-150%);
+      /* Start the element 100% below its original position */
+      opacity: 0;
+      /* Start with opacity 0 */
+    }
+
+    to {
+      transform: translateY(0);
+      /* End the element at its original position */
+      opacity: 1;
+      /* End with opacity 1 */
+    }
+  }
+
+
+  .card {
+    font-size: 15px;
+    transform-style: preserve-3d;
+    animation: slideIn 1.0s forwards;
+    transform: translateY(890%);
+    animation-delay: 0.2s;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.2rem;
+    background-color: transparent;
+      transition: all 0.4s ease-in-out;
+    background-color: transparent !important;
+
+    .card-title {
+      color: #ffd700 !important;
+    }
+
+    &:hover {
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+
+  .butt {
+    width: 12rem;
+    transform-style: preserve-3d;
+    animation: slideIn 1.0s forwards;
+    transform: translateY(890%);
+    animation-delay: 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+    height: 3.0rem;
+    border-radius: 0.2rem;
+    color: #ffd700 !important;
+    background-color: transparent;
+    border: 0.3px solid #ffd700 !important;
+    transition: all 0.4s ease-in-out;
+
+
+    &:hover {
+      background-color: #ffd700 !important;
+      color: black !important;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  img{
+    transition: all 0.5s ease-out;
+  }
+  img:hover {
+    transform: scale(1.1) !important;
+    transition: all 0.4s ease-in-out !important;
+  }
+  @media (max-width:200px) {
+    .butt{
+        width: 10% !important;
+    }
+}
