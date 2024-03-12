@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PROS/static/css/main.9eca602f.css",
-    "main.js": "/PROS/static/js/main.a7ea2fac.js",
+    "main.js": "/PROS/static/js/main.28e6d2ed.js",
     "static/media/Dream Tours.mp4": "/PROS/static/media/Dream Tours.7157bd3229fd8a259b3a.mp4",
     "static/media/Guideway.mp4": "/PROS/static/media/Guideway.50b6c76ddfb22e97aacc.mp4",
     "static/media/EMP.mp4": "/PROS/static/media/EMP.bead311b17ab8bab39f5.mp4",
@@ -10,16 +10,15 @@
     "static/media/guideway.png": "/PROS/static/media/guideway.a7ea18c9375bcde0abd1.png",
     "static/media/Developer.jpg": "/PROS/static/media/Developer.6d024dcaec5a1f174328.jpg",
     "static/media/EMp.png": "/PROS/static/media/EMp.b5ecfd05a8a38600bb9f.png",
-    "static/media/logo_sub.png": "/PROS/static/media/logo_sub.19f3ab25ab15fd848b30.png",
     "static/media/logo-s.png": "/PROS/static/media/logo-s.bfc9f81846bda5218dab.png",
     "static/media/chat.png": "/PROS/static/media/chat.9f467afe081272ef8ec9.png",
     "static/media/letter-m.png": "/PROS/static/media/letter-m.988b5d0e53fe5015e97f.png",
     "index.html": "/PROS/index.html",
     "main.9eca602f.css.map": "/PROS/static/css/main.9eca602f.css.map",
-    "main.a7ea2fac.js.map": "/PROS/static/js/main.a7ea2fac.js.map"
+    "main.28e6d2ed.js.map": "/PROS/static/js/main.28e6d2ed.js.map"
   },
   "entrypoints": [
     "static/css/main.9eca602f.css",
-    "static/js/main.a7ea2fac.js"
+    "static/js/main.28e6d2ed.js"
   ]
 }
