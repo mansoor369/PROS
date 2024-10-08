@@ -155,7 +155,7 @@
   }
 
 
-  .skills_ {
+  .skills__ {
     animation: slideInFromRight 3.5s forwards;
     animation-duration: 1.6s;
     display: flex;
@@ -183,8 +183,8 @@
 
   }
 
-  @media (max-width:400px) {
-    .skills_ {
+  @media (max-width:500px) {
+    .skills__ {
       font-size: 20px !important;
     }
   }
@@ -235,9 +235,9 @@
     }
   }
 
-  @media (max-width:400px) {
+  @media (max-width:300px) {
     .skills-heading_ {
-      font-size: 34px !important;
+      font-size: 20px !important;
     }
   }
 
@@ -253,7 +253,7 @@
     text-shadow: 1px 1px #ffd700;
 
   }
-
+ 
   @keyframes slideIn {
     from {
       transform: translateX(-150%);

@@ -1,27 +1,26 @@
 import "./app.scss"
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout";
 import Home from "./components/Home/home.js";
 import About from "./components/About me/about.js";
 import Skills from "./components/Skills/skills.js";
 import Contact from "./components/contact/contact.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/js/src/button.js"
-import { Container,Navbar } from "react-bootstrap";
+import Notfound from "./components/404/notfound.js";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router  >
     <Routes>
       <Route  path="/" element={<Layout />}>
-      <Route index element={<Home />}></Route>
-      <Route path="/about" element={<About />}></Route>
+      <Route index element={<Home />} /> 
+      <Route path="/about" element={<About />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Notfound />}  />
       </Route>
-      
     </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

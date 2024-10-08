@@ -54,12 +54,12 @@ const Skills = () => {
 
 
                 <div className='row cont'>
-                    <span className='skills_ '>Express.js, React.js, Node.js, MongoDB</span>
-                    <div className='projects'>
+                    <span className='skills__'>Express.js, React.js, Node.js, MongoDB</span>
+                   
                         <small className="small_ mx-3">h1</small> <br />
-                        <div className='skills-heading_'>Projects</div>
+                        <div className='skills-heading'>Projects</div>
                         <small className="small_ mx-3">/h1</small>
-                    </div>
+                    
 
                     <div onClick={()=>play('video1')} class="card  " style={{ width: 400,height:450 }}>
                         {isplaying.video1 ? (

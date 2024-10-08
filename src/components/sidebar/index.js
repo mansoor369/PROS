@@ -1,15 +1,12 @@
 import React from 'react'
 import "./index.scss"
 import logoS from "../../assets/img/letter-m.png"
-import logosub from "../../assets/img/logo_sub.png"
-import { Link, NavLink } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown'; import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faEye, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faGithub, faLinkedin, faSketch } from '@fortawesome/free-brands-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { NavbarBrand } from 'react-bootstrap'
 const Sidebar = () => {
 
@@ -22,12 +19,20 @@ const Sidebar = () => {
             🌟
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav" className='Nav'>
-            <NavbarBrand><img className='img-fluid' width={40} src={logoS} /> </NavbarBrand>
+            <NavbarBrand><img className='img-fluid' width={40} src={logoS} alt='yes' /> </NavbarBrand>
             <Nav>
-              <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/skills">SKILLS</Nav.Link>
-              <Nav.Link href='/contact'>CONTACT</Nav.Link>
-              <Nav.Link href='/about'>ABOUT</Nav.Link>
+            <Nav.Item className='nav-link'>
+            <Link to="/" className="nav-link">HOME</Link>
+          </Nav.Item>
+          <Nav.Item className='nav-link'>
+            <Link to="/skills" className="nav-link">SKILLS</Link>
+          </Nav.Item>
+          <Nav.Item className='nav-link'>
+            <Link to="/contact" className="nav-link">CONTACT</Link>
+          </Nav.Item>
+          <Nav.Item className='nav-link'>
+            <Link to="/about" className="nav-link">ABOUT</Link>
+          </Nav.Item >
             </Nav>
 
             <Nav>
@@ -39,7 +44,7 @@ const Sidebar = () => {
                   </a>
                 </li>
                 <li class="nav-itemm px-4">
-                  <a class="nav-linkk" target='_blank' rel='noreferrer' href='https://github.com/mansoor369/PROS'>
+                  <a class="nav-linkk" target='_blank' rel='noreferrer' href='https://github.com/mansoor369'>
                     <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                   </a>
                 </li>

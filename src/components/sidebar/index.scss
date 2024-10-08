@@ -2,9 +2,7 @@
 
 .nav-link{
     color: #ffd700 !important;
-    margin-right: 10%;
-    
-    
+    margin-right: 10% !important;
 }
 
 .navbar-nav{
@@ -22,6 +20,19 @@
     
 }
 
+.nav-item::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color:#bababa ;
+    transform: scale(0);
+    transform-origin:center;
+    transition: transform 0.3s ease;
+}
+.nav-link:hover::after{
+    transform: scaleX(1.0);
+}
 
 .toggler{
     margin-left: auto;

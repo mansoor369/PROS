@@ -17,31 +17,31 @@ body{
  /* Ensure proper positioning for overlay */
 
 /* Create gradient overlay for left side */
-// body::before {
-//     content: '';
+//  body::before {
+//      content: '';
 //     position: absolute;
 //     top: 0;
 //     left: 0;
 //     width: 50vw; /* Use viewport width to cover half of the screen */
-//     height: 320vh; /* Use viewport height to cover the full screen */
-//     background: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent);
-//     z-index: 1;
-//     pointer-events: none;
-// }
+//          height: 320vh; /* Use viewport height to cover the full screen */
+//      background: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent);
+//    z-index: 1;
+//      pointer-events: none;
+//  }
 
-// /* Create gradient overlay for right side */
-// body::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     width: 50vw; /* Use viewport width to cover half of the screen */
-//     height: 320vh; /* Use viewport height to cover the full screen */
-//     background: linear-gradient(to left, rgba(255, 255, 255, 0.2), transparent);
-//     z-index: 1;
-//     pointer-events: none;
+// // /* Create gradient overlay for right side */
+//  body::after {
+//      content: '';
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//      width: 50vw; /* Use viewport width to cover half of the screen */
+//      height: 320vh; /* Use viewport height to cover the full screen */
+//      background: linear-gradient(to left, rgba(255, 255, 255, 0.2), transparent);
+//      z-index: 1;
+//      pointer-events: none;
     
-// }
+//  }
 
 input,
 textarea{
